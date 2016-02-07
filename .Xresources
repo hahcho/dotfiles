@@ -5,8 +5,12 @@ URxvt*cursorBlink: true
 URxvt*font:xft:Inconsolata:pixelsize=24:antialias=true:hinting=true,xft:Sans:pixelsize=24:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=24:antialias=true:hinting=true
 URxvt*boldFont:xft:Inconsolata:pixelsize=24:antialias=true:hinting=true,xft:Sans:pixelsize=24:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=24:antialias=true:hinting=true
 
-URxvt.perl-ext-common: default
-
+URxvt.perl-ext-common: default,clipboard-osc
+! Remove the support for ISO-14755 - standard for entering and viewing unicode 
+! characters and characters code using the keyboard.
+! Bascially disabling it removes the Control-Shift mappings.
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
