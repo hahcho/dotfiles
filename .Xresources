@@ -5,8 +5,10 @@ URxvt*cursorBlink: true
 URxvt*font:xft:Inconsolata:pixelsize=24:antialias=true:hinting=true,xft:Sans:pixelsize=24:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=24:antialias=true:hinting=true
 URxvt*boldFont:xft:Inconsolata:pixelsize=24:antialias=true:hinting=true,xft:Sans:pixelsize=24:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=24:antialias=true:hinting=true
 
-URxvt.perl-ext-common: default,clipboard-osc
-! Remove the support for ISO-14755 - standard for entering and viewing unicode 
+URxvt.perl-ext-common: default,eval
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+! Remove the support for ISO-14755 - standard for entering and viewing unicode
 ! characters and characters code using the keyboard.
 ! Bascially disabling it removes the Control-Shift mappings.
 URxvt.iso14755: false
