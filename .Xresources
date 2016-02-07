@@ -2,23 +2,25 @@ URxvt*scrollBar: false
 URxvt*scrollBar_right: false
 URxvt*cursorBlink: true
 
-URxvt*font:xft:Inconsolata:pixelsize=14:antialias=true:hinting=true,xft:Sans:pixelsize=14:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=14:antialias=true:hinting=true
-URxvt*boldFont:xft:Inconsolata:pixelsize=14:antialias=true:hinting=true,xft:Sans:pixelsize=14:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=14:antialias=true:hinting=true
+URxvt*font:xft:Inconsolata:pixelsize=24:antialias=true:hinting=true,xft:Sans:pixelsize=24:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=24:antialias=true:hinting=true
+URxvt*boldFont:xft:Inconsolata:pixelsize=24:antialias=true:hinting=true,xft:Sans:pixelsize=24:antialias=true:hinting=true,xft:Inconsolata for Powerline:pixelsize=24:antialias=true:hinting=true
 
-URxvt*perl-ext-common: default,matcher,selection-to-clipboard
-URxvt.urlLauncher: /usr/bin/xdg-open
-URxvt.matcher.button: 1
-URxvt.colorUL: #4682B4
-
-URxvt.keysym.F11: perl:fullscreen:switch
-
+URxvt.perl-ext-common: default,eval
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+! Remove the support for ISO-14755 - standard for entering and viewing unicode
+! characters and characters code using the keyboard.
+! Bascially disabling it removes the Control-Shift mappings.
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 URxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress: true
-
+! be a login shell
+URxvt*loginShell: true
 
 ! Arrow keys to move by word forward and backward
 URxvt.keysym.Control-Up:    \033[1;5A
