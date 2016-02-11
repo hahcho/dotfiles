@@ -1,3 +1,6 @@
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
+[submodule ".urxvt/urxvt-perls"]
+	path = .urxvt/urxvt-perls
+	url = https://github.com/muennich/urxvt-perls
