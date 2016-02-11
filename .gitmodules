@@ -4,3 +4,6 @@
 [submodule ".urxvt/urxvt-perls"]
 	path = .urxvt/urxvt-perls
 	url = https://github.com/muennich/urxvt-perls
+[submodule ".urxvt/urxvt-font-size"]
+	path = .urxvt/urxvt-font-size
+	url = https://github.com/majutsushi/urxvt-font-size.git
