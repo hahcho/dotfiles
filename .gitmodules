@@ -7,3 +7,6 @@
 [submodule ".urxvt/urxvt-font-size"]
 	path = .urxvt/urxvt-font-size
 	url = https://github.com/majutsushi/urxvt-font-size.git
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git
